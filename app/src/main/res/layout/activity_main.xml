@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!--
+    Thư viện sử dụng CircleImageView:
+    - Link Github của thư viện: https://github.com/hdodenhof/CircleImageView
+
+    BƯỚC 1: import thư viện
+    - Cách import thư viện: Tại buil.gradle(Module:app) thêm lệnh
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    vào lệnh dependencies
+
+    BƯỚC 2: Copy ảnh vào res/drawable
+
+    BƯỚC 3: Thực hiện sử dụng CircleImageView
+
+    -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/a"
+        app:civ_border_color="#99ff99"
+        app:civ_border_width="5dp"
+
+        android:layout_centerHorizontal="true"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/hiu"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/hiu"
+        app:civ_border_color="#99ff99"
+        app:civ_border_width="5dp"
+
+        android:layout_centerInParent="true"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/avatar"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/b"
+        app:civ_border_color="#99ff99"
+        app:civ_border_width="5dp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
